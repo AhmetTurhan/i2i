@@ -1,0 +1,83 @@
+Docker: Linux çekirdeği özelliklerini kullanan container engine.
+Docker Linux'a ihtiyaç duyar MAC ve Windows'ta docker çalıştırırsan docker sanal sunucu oluşturup kendisini
+onun üzerinde çalıştırır.
+
+Docker nasıl çalışır?
+Sanal makinelerin sunucu donanımını sanallaştırmasına benzer şekilde containerlar da bir sunucunun işletim sistemini 
+sanallarştırır.
+
+Docker hangi durumlarda kullanılmalı?
+	-Mikro Hizmetler: Dayılmış uygulama mimarileri oluşturup  ölçeklendirmek için kullanılır.
+	-Sürekli Entegrasyon ve Teslim: Ortamı standartlaştırır ve dil yığınları arasındaki çakışmaları ortadan
+	kaldırır.
+	-Veri İşleme: Taşınabilir Containerlar paketlenebilir.
+	-Dağıtılmış uygulamalar yaparak sunulabilir.
+
+
+Docker ve Sanal makinenin farkı: Bütün bir sanal işletim sistemi oluşturmak yerine Linux çekirdeğini paylaşarak 
+birbirinden izole  bir şekilde sistemin kullanılmasına olanak sağlar.
+
+İmage: Çalıştırmak istediğimiz uygulamaların paket hali.
+
+Container: Paketlenmiş imageleri çalışırabileceğimiz alanlar.
+
+Dockerfile: Lokalde çaışan projenin image üretmek için kullanacağımız dosyalar
+
+Docker registery: Docker imagelerin saklandığı yer.
+
+Docker-Compose: Çoklu mikro servisler, veritabanları ve benzer
+ bağımlılıklardan oluşan yapıların çalıştırılması 
+için kullanılır.
+
+Docker-engine: Linux çekirdeğinin üzerinde çalışır.
+
+Docker-machine: Birden fazla host oluşturup yönetmek içinn kullanılır.
+yani bir veya birden fazla sistem üzerine "Docker-engine" yüklemek için kullanılır.
+
+Docker-Swarm: Veritabanı, uygulama sunucuları, web sunucuları gibi bileşenlerden oluşna büyük kapsama sahip 
+uygulamaları Docker Swarm ile yönetilebilir, yük ölçeklemesi yapılabilir.
+
+Docker-deamon: Containerların birbirinden izole çalışmasını sağlar.
+
+Docker sayesinden birbirinden izole containerlar(sistemler) oluşturup içerisinde istediğimiz imageları çalıştırırız.
+
+Docker Volume: Containerlar Docker üzerinde stateless çalışırlar. Durum bilgisi tutmazlar. Container silinirse 
+içindekiler de silinir. Docker içinde verilerimizi tutmak için bunu kullanırız.
+
+Containerlar birbirinden izoledir ancak birbirleriyle network kurabilirler.
+Her container kurulduğunda default olarak bridge isimli bir network ağı vardır.
+
+Hypervisor: Çoklu işletim sistemlerinin aynı donanım üzerinde çalışmasını sağlayan bir kod parçasıdır.
+Bu kod parçası direkt donanım üzerinde çalışarak sunucu üzerinde birden fazla guest operating system 
+oluşturmamıza olanak sağlar.
+
+Docker kullanım nedenleri:
+	-Kullanım kolaylığı
+	-Sistemlerin daha hızlı ölçeklendirilmesi
+	-Yazılım tanımlı ağ
+	-Mikro service mimarisinin yükselişi
+
+Docker Kullanan uygulamalar: 
+Verizon
+Paypal
+Netflix
+AT&T
+Adobe
+Taget
+...
+
+
+ 
+Key Words: 
+
+Pair Programming: Eşli kodlama anlamına gelmektedir.
+	- İki farklı bakış açısından bakılmayı sağlar.
+	- CodeReview sağlar.(Temiz kod çıkarırlar.)
+	- Uzun süren düşünme saatlerini azaltır.
+	- Birbirlerine yeni özellikler katabilir geliştiriciler.
+	- Adaptasyonu hızlandırır.
+
+Virtualization: Sanallaştırma anlamına gelir.
+Sanal bir kaynak formunun oluşması anlamına gelir.(sunucu,masaüstü,işletim sistemi, depolama alanı, vb.)
+
+Continerization: Containerlerın amacı uygulamayı ve onun bağımlılıklarını kendi ortamında çalıştırmaktır.
