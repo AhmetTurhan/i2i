@@ -1,0 +1,21 @@
+Tracer Bullets And Prototypes
+
+	How They Are Similar
+		Tracer Bullets and prototypes both are used to headway on a new undertaking.
+		You are creating something new; an exciting but complicated process. the features
+		are not well-defined. Tracer bullets and prototypes are smilar in that they are both used in
+		this situation. Other similarity is that the re both focused on quick, efficent results.
+	
+	How They Are Different
+		
+		Tracer bullets is used as starter code for the final solution.
+		Prototypes are great for trying out different ideas and see what sticks.
+		We build prototypes for analysis  and exploring the different kids of risk.
+
+Orthogonality Examples:
+	Orthogonality means that operations change just on thing without affecting others.
+	
+	-The number of keys on the piano and the number of pianists are not dependent on each other.
+	-On buildings your door count in not depend on people count. It's depend on room count.
+	
+		
