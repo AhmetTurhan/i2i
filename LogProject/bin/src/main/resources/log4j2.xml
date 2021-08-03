@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration >
+    <Appenders>
+        <console name = "Console" target="system.out">
+            <PatternLayout pattern = "%d{ISO8601}[%t] %-5level %logger{%36} - %msg%n - %msg%n"/>
+            <!--%d{ISO8601}: log'un tutulduğu zamanı gösterecek
+                [%t] : kaydettiğimiz methodun adını verir
+                %-5level : tutulan log hangi levelde onu gösterir
+                %logger : tutulan log hangi clasta tutuldu onu gösterir
+                %msg%n : tutulan logdaki mesaj
+                (%F:%L) : tutulan logun hangi clasta kaçıncı satırda olduğunu gösteriyor
+            -->
+        </console>
+        <console name = "File" target="system.out">
+            <PatternLayout pattern = "%d{ISO8601}[%t] %-5level %logger{%36} - %msg%n - %msg%n"/>
+
+        </console>
+    </Appenders>
+    <Loggers><!--Bu Loggers tagı istediğimiz bölgelere ve seviyelere göre log yapmamızı sağlıyor -->
+        <Root level ="INFO"><!--Eğer özel bir bölge belirtilmediyse root dizinine log atılır-->
+            <AppenderRef ref = "Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</configuration>
